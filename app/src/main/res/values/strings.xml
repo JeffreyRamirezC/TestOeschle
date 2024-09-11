@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">TVS Mantenimiento</string>
+    <!-- Login -->
+    <string name="main_id">Usuario</string>
+    <string name="main_pass">Clave</string>
+    <string name="main_type">Sucursal</string>
+    <string name="main_button">Ingresar</string>
+    <string name="recover_button">Enviar</string>
+    <!-- Main -->
+    <string name="hello_message">Bienvenido Usuario</string>
+    <string name="subtitle">Seleccione su opción</string>
+
+    <!-- Fragment OT PDF -->
+    <string name="left_picture">Foto Lateral Izquierda</string>
+    <string name="right_picture">Foto Lateral Derecha</string>
+    <string name="front_picture">Foto Delantera</string>
+    <string name="back_picture">Foto Trasera</string>
+
+    <!-- Menu -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Current User</string>
+    <string name="nav_header_subtitle">contact.example@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_validate_chasis">Validar Chasis</string>
+    <string name="menu_inspeccion">Ordenes de Trabajo</string>
+    <string name="menu_validate_client">Validar Cliente</string>
+
+    <string name="menu_salir">Salir</string>
+    <!-- BarCode Library-->
+    <string name="ok">OK</string>
+    <string name="grant_permission">Permiso Concedido</string>
+    <string name="permission_camera">Esta aplicación necesita del permiso de cámara</string>
+    <string name="permission_camera_rationale">Acceso a la cámara para detección</string>
+    <string name="no_camera_permission">La Aplicación no puede continuar porque necesita el permiso de la cámara.\n Se cerrará la aplicación.</string>
+    <string name="low_storage_error">No se pudo detectar el rostro porque no hay espacio suficiente en el dispositivo</string>
+    <string name="title_activity_main">Lector de código de barras</string>
+    <string name="barcode_header">Presione &quot;Leer Código&quot; para empezar</string>
+    <string name="read_barcode">Leer código de barras</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Código de Barras leido correctamente</string>
+    <string name="barcode_failure">No se ha detectado un código de barras válido</string>
+    <string name="barcode_error">"se ha producido un error al leer: %1$s"</string>
+    <string name="grant">Conceder</string>
+    <string name="cancel">Cancelar</string>
+    <string name="text_scan_chip">Escanea el código de barras ubicado en la tarjeta del chip.</string>
+
+    <!--PDF INTRO -->
+    <string name="fragment_coment_user">Observaciones del Cliente</string>
+    <string name="fragment_coment_tech">Observaciones del STA</string>
+    <!--OT OPTIONS-->
+    <string name="menu_info_client">Info Cliente</string>
+    <string name="menu_info_vehicle">Info Vehiculos</string>
+    <string name="menu_tools">Repuestos</string>
+    <string name="menu_job">Trab. Realizados</string>
+    <string name="menu_intro">Inspección</string>
+
+    <!--DIALOG OPTION-->
+    <string name="dialog_job">Reparación</string>
+    <string name="dialog_maintenance">Mantenimiento</string>
+    <string name="dialog_warranty">Garantía</string>
+    <string name="dialog_title">Elija el Tipo de Orden de Trabajo</string>
+</resources>

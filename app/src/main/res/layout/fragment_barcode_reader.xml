@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:keepScreenOn="true">
+
+    <com.tvs.maintenance.util.ui.barcode.camera.CameraSourcePreview
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tvs.maintenance.util.ui.barcode.camera.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.tvs.maintenance.util.ui.barcode.camera.CameraSourcePreview>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.7"
+        />
+
+
+    <TextView
+        android:id="@+id/title_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="Escanee el código de barras"
+        android:textColor="#fff"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/lector_bck"
+        >
+
+    </RelativeLayout>
+    <com.tvs.maintenance.util.ui.barcode.ScannerOverlay
+        android:id="@+id/scan_overlay"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="370dp"
+        android:layout_height="150dp"
+        android:background="#000000"
+        app:line_color="@color/colorPrimary"
+        app:line_speed="1"
+        app:line_width="5"
+        app:square_height="150"
+        app:square_width="370" />
+
+</RelativeLayout>

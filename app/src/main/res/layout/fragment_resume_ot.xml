@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_client"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#FFF"
+                android:elevation="20dp"
+                android:minHeight="70dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:contentPadding="15dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:id="@+id/ic_info_cliente"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_below="@+id/tv_ot_number"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ic_base"
+                            android:fontFamily="sans-serif-condensed"
+                            android:padding="15dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_info_client"
+                            android:tint="#000" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ic_info_cliente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_info_client"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="100"
+                        android:orientation="vertical"
+
+                        android:animateLayoutChanges="true"
+                        android:layoutDirection="ltr"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="50"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="Nº DNI"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_dni"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="72564959"
+                                    android:textColor="#BEBEBE"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="50"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="Nombre"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="Jeffrey Ramîrez"
+                                    android:textColor="#BEBEBE"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#FFF"
+                android:elevation="20dp"
+                android:minHeight="70dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:contentPadding="15dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:id="@+id/ic_info_vehicle"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_below="@+id/tv_ot_number"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ic_base"
+                            android:fontFamily="sans-serif-condensed"
+                            android:padding="15dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_maitenance_icon_black"
+                            android:tint="#000" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ic_info_vehicle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_info_vehicle"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="100"
+                        android:orientation="vertical"
+
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="50"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_chasis"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="Nº Chasis"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_tipo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="20203020"
+                                    android:textColor="#BEBEBE"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="50"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_motor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="Nº Motor"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_motor_desc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="52WVC10338"
+                                    android:textColor="#BEBEBE"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="50"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_fec_orden"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="Fecha de Orden"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_fec_orden_det"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="20/03/2020"
+                                    android:textColor="#BEBEBE"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="50"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_desc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="Detalle Trabajo"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_desc_detail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="Mantenimiento"
+                                    android:textColor="#BEBEBE"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_inspection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#FFF"
+                android:elevation="20dp"
+                android:minHeight="70dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:contentPadding="15dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:id="@+id/ic_inspection"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_below="@+id/tv_ot_number"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ic_base"
+                            android:fontFamily="sans-serif-condensed"
+                            android:padding="15dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_inspection"
+                            android:tint="#000" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ic_inspection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_intro"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="100"
+                        android:orientation="vertical"
+
+                        android:animateLayoutChanges="true"
+                        android:layoutDirection="ltr"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="50"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="Modelo Vehiculo"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_inspect"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="3R"
+                                    android:textColor="#BEBEBE"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:orientation="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="70dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="50"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="Titular Moto"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_client_to_receive"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:gravity="center_vertical"
+                                    android:maxLines="2"
+                                    android:minHeight="30dp"
+                                    android:text="John Valderrama"
+                                    android:textColor="#BEBEBE"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_jobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#FFF"
+                android:elevation="20dp"
+                android:minHeight="70dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:contentPadding="15dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:id="@+id/ic_jobs"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_below="@+id/tv_ot_number"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/ic_base"
+                            android:fontFamily="sans-serif-condensed"
+                            android:padding="15dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_tools"
+                            android:tint="#000" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/ic_jobs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_job"
+                            android:singleLine="true"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/list_jobs"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="100"
+                        android:orientation="vertical"
+                        
+                        android:weightSum="100">
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

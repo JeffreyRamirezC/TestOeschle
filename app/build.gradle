@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            storeFile file('/Users/jeffrey/Downloads/TVSMantenimiento/key/keyseidor.jks')
+            storePassword 'Seidor2020'
+            keyAlias = 'userseidor'
+            keyPassword 'Seidor2020'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.tvs.maintenance"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.config
+        multiDexEnabled true
+    }
+    android{
+        useLibrary 'org.apache.http.legacy'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "URL_SERVICE", "\"https://qfirst.pe.sgs.com/wsYoMeEncargo/api/\""
+        }
+        debug{
+            debuggable true
+            buildConfigField "String", "URL_SERVICE", "\"https://qfirst.pe.sgs.com/wsYoMeEncargo/api/\""
+        }
+        certi{
+            debuggable true
+            buildConfigField "String", "URL_SERVICE", "\"https://qfirst.pe.sgs.com/wsYoMeEncargo/api/\""
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation('org.apache.httpcomponents:httpmime:4.3.6') {
+        exclude module: 'httpclient'
+    }
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'com.applandeo:material-calendar-view:1.5.1'
+    implementation 'com.google.firebase:firebase-core:15.0.2'
+    implementation 'com.google.android.gms:play-services-vision:15.0.2'
+    implementation 'com.google.android.gms:play-services-analytics:15.0.2'
+
+}
